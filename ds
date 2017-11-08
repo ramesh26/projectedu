@@ -1,0 +1,251 @@
+[33mcommit 01b9061f69b858a8cf30dccc20f9b10c021ca997[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: ba96ab0f 1603f780
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Wed Nov 1 08:57:45 2017 -0500
+
+    Merge pull request #4476 from gabriel-caruso/package-cross-env
+    
+    Updated cross-env in package.json
+
+[33mcommit 1603f7804de1196af41cf785d17612d68387a791[m
+Author: Gabriel Caruso <carusogabriel34@gmail.com>
+Date:   Wed Nov 1 08:50:20 2017 -0200
+
+    Updated cross-env in package.json
+
+[33mcommit ba96ab0f6e36659368f7d95748b7cffb426b1001[m
+Merge: 7adc396e b69e9d2e
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Tue Oct 31 11:53:42 2017 -0500
+
+    Merge pull request #4475 from tecpresso/add_sponsor
+    
+    add sponsor
+
+[33mcommit b69e9d2e1eeab78bfbf292cfb3570363724a2980[m
+Author: Tatsunari Sakanoue <tatsnaly@gmail.com>
+Date:   Tue Oct 31 23:49:52 2017 +0900
+
+    add sponsor
+
+[33mcommit 7adc396e9b4cac91beb745678663aed5cd3eaf65[m
+Merge: a3eb00e2 273a2e76
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Mon Oct 30 07:49:18 2017 -0500
+
+    Merge pull request #4473 from gabriel-caruso/jquery
+    
+    Update jquery in package.json
+
+[33mcommit 273a2e76a62651971e7cff5ddf8152b4c89c4d22[m
+Author: Gabriel Caruso <carusogabriel34@gmail.com>
+Date:   Sun Oct 29 22:34:47 2017 -0200
+
+    Update jquery in package.json
+
+[33mcommit a3eb00e23a21088257792b60079537ce577bd1ee[m
+Merge: e441d9ca 6c03688d
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Sun Oct 29 08:48:45 2017 -0500
+
+    Merge pull request #4472 from nikolaynizruhin/master
+    
+    Update axios
+
+[33mcommit 6c03688d2609118150efd5e2aeecd724369e78d3[m
+Author: Nikolay Nizruhin <lgnexus4fun@gmail.com>
+Date:   Sat Oct 28 19:53:12 2017 +0300
+
+    Update axios
+
+[33mcommit e441d9cac86bffcb3d5dc079ee86fcae7cd955d5[m
+Merge: a4aada88 f1253690
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Thu Oct 26 07:17:27 2017 -0500
+
+    Merge pull request #4470 from michaeldyrynda/chore/consistent-aws-env-vars
+    
+    Update AWS environment variable defaults
+
+[33mcommit f1253690c5374c42fe54b7336063605380c39d56[m
+Author: Michael Dyrynda <michael@dyrynda.com.au>
+Date:   Thu Oct 26 10:44:00 2017 +1030
+
+    Update AWS environment variable defaults
+    
+    Aids those users that are using the AWS CLI tools, by matching the `filesystems.disks.s3`
+    configuration values with those that would be set in a user's native environment already.
+    
+    AWS Documentation [reference](http://docs.aws.amazon.com/cli/latest/userguide/cli-environment.html)
+    
+    Resolves laravel/internals#778
+
+[33mcommit a4aada88b08e979957a26c9f5f6641b075a49b9a[m
+Merge: 3dcea02d 8b990b27
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Tue Oct 24 10:50:39 2017 -0500
+
+    Merge pull request #4467 from michaeldyrynda/master
+    
+    Don't show progress for production run command
+
+[33mcommit 8b990b27b5f1defe39e61bec9a91bf25bed1a25b[m
+Author: Michael Dyrynda <michael@dyrynda.com.au>
+Date:   Wed Oct 25 00:07:30 2017 +1030
+
+    Don't show progress for production run command
+
+[33mcommit 3dcea02db6fa216e3823b7851f0a575a3d549591[m
+Merge: e6067bec d6cf4ea0
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Sun Oct 22 15:52:44 2017 -0500
+
+    Merge pull request #4464 from m1guelpf-forks/patch-1
+    
+    Update Laracasts statistics
+
+[33mcommit d6cf4ea06da4a9477e040af473174546082dbcb9[m
+Author: Miguel Piedrafita <github@miguelpiedrafita.com>
+Date:   Sun Oct 22 16:13:45 2017 +0200
+
+    Update Laracasts statistics
+
+[33mcommit e6067becd1a48e5953f57431c68125c79b93d587[m
+Merge: 8f99719d 4f586a8e
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Sun Oct 22 08:52:20 2017 -0500
+
+    Merge pull request #4461 from Gawdl3y/patch-2
+    
+    Reword the readme slightly and link the email address
+
+[33mcommit 4f586a8e1ad7b41c7c6b27e30edb1fcd5cbd6f5f[m
+Author: Schuyler Cebulskie <Gawdl3y@gmail.com>
+Date:   Sat Oct 21 15:39:05 2017 -0400
+
+    Slightly reword readme, link email
+
+[33mcommit 8f99719dfe74b798dadf679c587d68727a2d4797[m
+Merge: da985105 0d62dfb9
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Mon Oct 16 09:29:05 2017 -0500
+
+    Merge pull request #4458 from gabriel-caruso/mockery
+    
+    [5.5] Match mockery/mockery with laravel/framework
+
+[33mcommit 0d62dfb9091a6c8f86329be4184702b0e64c8156[m
+Author: Gabriel Caruso <carusogabriel34@gmail.com>
+Date:   Mon Oct 16 10:46:16 2017 -0200
+
+    Matche mockery/mockery with laravel/framework
+
+[33mcommit da9851055a7f1bac3dbd41181e504cefeafe8b92[m
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Mon Oct 9 15:49:15 2017 -0500
+
+    compile assets
+
+[33mcommit 4a86f0765a24be2b633e485848920f8a524be5ed[m
+Merge: 23f6bbe6 814e0f22
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Mon Oct 9 15:36:37 2017 -0500
+
+    Merge pull request #4447 from talvbansal/master
+    
+    Rename example component to follow the vue.js style guide
+
+[33mcommit 814e0f22e02ee7de383127f6aa6b05b61ab97d4f[m
+Author: Talv Bansal <t.bansal@orbitunderwriting.com>
+Date:   Mon Oct 9 14:34:20 2017 -0400
+
+    Update example component to follow the vue.js style guide
+
+[33mcommit 23f6bbe6997371a9222442f35aca30fa38fd2c12[m
+Merge: 691fdfe1 084f1000
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Wed Oct 4 09:01:04 2017 -0500
+
+    Merge pull request #4444 from calebporzio/session-lifetime-in-env
+    
+    Load session lifetime from env file
+
+[33mcommit 084f10004582299ef3897f6ec14315209d5c1df1[m
+Author: Caleb Porzio <calebporzio@gmail.com>
+Date:   Wed Oct 4 09:52:03 2017 -0400
+
+    Load config.session.lifetime from env file
+
+[33mcommit 691fdfe1c2c047d79e4fa07d69ded8bf0e0ce0a8[m
+Merge: 4bbd5f9b 8d1d1e1b
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Tue Sep 26 16:34:29 2017 -0500
+
+    Merge pull request #4433 from ragingdave/patch-1
+    
+    Update .htaccess
+
+[33mcommit 8d1d1e1b94d7b1aedd94416a361db0fa499d0a73[m
+Author: David Cox Jr <DaveMC08@gmail.com>
+Date:   Tue Sep 26 13:13:01 2017 -0400
+
+    Update .htaccess
+    
+    This rewrite condition is never hit as the rewrite to index is triggered before this, and the authorization is never passed on. Moving this condition corrects that issue as mentioned on the commit
+
+[33mcommit 4bbd5f9be579d5e69fe784216298d9f06824d6c2[m
+Merge: b96b1529 bf59cd3c
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Mon Sep 18 14:19:01 2017 -0500
+
+    Merge pull request #4422 from andrey-helldar/patch-4
+    
+    Added "-Indexes" option
+
+[33mcommit bf59cd3ce1d750a4fe4b67af984fdfb5f2a6e1d7[m
+Author: Andrey Helldar <helldar@ai-rus.com>
+Date:   Mon Sep 18 20:42:11 2017 +0300
+
+    Added "-Indexes" option
+    
+    If you open the `/css`, `/js`, or any other folder on the default server, you can see the list of files in the directory.
+    The `-Indexes` option forbids viewing directory files via the web interface.
+
+[33mcommit b96b1529984a2377bae995de78710707d11d1f48[m
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Mon Sep 18 07:24:14 2017 -0500
+
+    sponsor
+
+[33mcommit 392ece3e4fdc4d58c562b0404a66ef2b90a9f9b9[m
+Merge: d1cfd416 80e96d27
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Mon Sep 11 08:04:20 2017 -0500
+
+    Merge pull request #4416 from laravel/revert-4413-master
+    
+    Revert "Use database_path helper for sqlite database filename specified in .env"
+
+[33mcommit 80e96d276a5c232705ed62dfd55dec50e6030c8c[m
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Mon Sep 11 08:04:12 2017 -0500
+
+    Revert "Use database_path helper for sqlite database filename specified in .env"
+
+[33mcommit d1cfd416ca045897e43aa1448552b86aeddef793[m
+Merge: 26a0e8d7 982e95b5
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Sat Sep 9 23:12:43 2017 +0200
+
+    Merge pull request #4413 from adrianharabula/master
+    
+    Use database_path helper for sqlite database filename specified in .env
+
+[33mcommit 982e95b5fbf3d10a27fb4ac0bf8fbaa0e2c5efcb[m
+Author: Adrian Harabula <adrian.harabula@gmail.com>
+Date:   Sat Sep 9 21:48:43 2017 +0300
+
+    use database_path helper for sqlite database filename specified in .env
+
+[33mcommit 26a0e8d7588546f766ccb81d0d23333ffeca763c[m
+Author: Taylor Otwell <taylor@laravel.c
