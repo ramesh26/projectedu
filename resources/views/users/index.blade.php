@@ -7,6 +7,7 @@
 	            <h4>Users Management</h2>
 	        </div>
 	        <div class="pull-right">
+	        	<a class="btn btn-success btn-sm" href="{{ route('users.uploadcsv') }}"> Create Bulk User</a>
 	            <a class="btn btn-success btn-sm" href="{{ route('users.create') }}"> Create New User</a>
 	        </div>
 	    </div>

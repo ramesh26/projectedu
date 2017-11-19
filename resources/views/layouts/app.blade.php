@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
-        <link rel='stylesheet' id='kleo-fonts-css' href='http://localhost/projectedu/css/fontello.min.css' type='text/css' media='all'/>
+        <link rel='stylesheet' href='{{ env("APP_URL") }}/css/fontello.min.css' />
 
 
 <link rel='stylesheet' id='bp-parent-css-css' href='https://seventhqueen.com/themes/kleo/wp-content/themes/kleo/buddypress/css/buddypress.css?ver=2.9.2' type='text/css' >
@@ -42,7 +42,8 @@ a:hover
     background: #20435f;
 }
 #buddypress div#item-nav ul li:hover a span {
-    background: none;
+    background: #fff;
+    color: #20435f;
 }
 .item-list-tabs ul li a
 {
@@ -174,6 +175,10 @@ div#item-header-content {
     position: absolute;
     left: 48%;
     top: 60%;
+    color: #FFF;
+}
+span.count {
+    background: #ff0000ad;
     color: #FFF;
 }
 /**
@@ -577,9 +582,9 @@ body {
 
           <div id="item-nav" style="background-image: none;">
               <div class="item-list-tabs no-ajax" id="object-nav" aria-label="Member primary navigation" role="navigation">
-                  <ul class="responsive-tabs"><li class="dropdown pull-right tabdrop"><a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;</a><ul class="dropdown-menu"><li id="media-personal-li"><a id="user-media" href="{{ route('roles.index') }}">Roles <span>3</span></a></li></ul></li>
+                  <ul class="responsive-tabs"><li class="dropdown pull-right tabdrop"><a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;</a><ul class="dropdown-menu"><li id="media-personal-li"><a id="user-media" href="{{ route('roles.index') }}">Roles <span class="count">8</span></a></li></ul></li>
 
-                      <li id="activity-personal-li"><a id="user-activity" href="/projectedu/home">Activity</a></li><li id="xprofile-personal-li" class="current selected"><a id="user-xprofile" href="{{ route('itemCRUD2.index') }}">Profile</a></li><li id="blogs-personal-li"><a id="user-blogs" href="{{ route('users.index') }}">Users <span class="count">6</span></a></li><li id="friends-personal-li"><a id="user-friends" href="{{ route('itemCRUD2.index') }}">Friends <span class="count">38</span></a></li><li id="groups-personal-li"><a id="user-groups" href="{{ route('itemCRUD2.index') }}">Groups <span class="count">36</span></a></li><li id="forums-personal-li"><a id="user-forums" href="{{ route('itemCRUD2.index') }}">Forums</a></li><li id="articles-personal-li"><a id="user-articles" href="{{ route('itemCRUD2.index') }}">Articles</a></li>
+                      <li id="activity-personal-li"><a id="user-activity" href="/projectedu/home">Activity</a></li><li id="xprofile-personal-li" class="current selected"><a id="user-xprofile" href="{{ route('itemCRUD2.index') }}">Profile</a></li><li id="blogs-personal-li"><a id="user-blogs" href="{{ route('users.index') }}">Users <span class="count">6</span></a></li><li id="friends-personal-li"><a id="user-friends" href="{{ route('itemCRUD2.index') }}">Friends <span class="count">38</span></a></li><li id="groups-personal-li"><a id="user-groups" href="{{ route('itemCRUD2.index') }}">Topics <span class="count">36</span></a></li><li id="forums-personal-li"><a id="user-forums" href="{{ route('itemCRUD2.index') }}">Forums <span class="count">100</span></a></li><li id="articles-personal-li"><a id="user-articles" href="{{ route('itemCRUD2.index') }}">Articles <span class="count">8</span></a></li>
                       
                   </ul>
               </div>
@@ -591,7 +596,7 @@ body {
 
         <li id="just-me-personal-li" class="current selected"><a id="just-me" href="{{ route('itemCRUD2.index') }}">Personal</a></li><li id="activity-mentions-personal-li"><a id="activity-mentions" href="{{ route('itemCRUD2.index') }}">Mentions</a></li><li id="activity-favs-personal-li"><a id="activity-favs" href="{{ route('itemCRUD2.index') }}">Favorites</a></li><li id="activity-friends-personal-li"><a id="activity-friends" href="{{ route('itemCRUD2.index') }}">Friends</a></li><li id="activity-groups-personal-li"><a id="activity-groups" href="{{ route('itemCRUD2.index') }}">Groups</a></li>
         <li id="activity-filter-select" class="last">
-            <label for="activity-filter-by">Show:</label>
+            <label for="activity-filter-by">Select:</label>
  
             <select id="activity-filter-by">
             <option value="-1">— Everything —</option>

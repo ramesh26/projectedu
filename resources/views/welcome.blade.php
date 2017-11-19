@@ -37,10 +37,15 @@
 
             .top-right {
                 position: absolute;
-                right: 10px;
+            left: 10px;
                 top: 18px;
             }
-
+ .top-right1 {
+                position: absolute;
+                right: 10px;
+            
+                top: 18px;
+            }
             .content {
                 text-align: center;
             }
@@ -65,21 +70,36 @@
         </style>
     </head>
     <body>
+
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
+                  
+                      <a href="">Articles</a>
+                         <a href="">News</a>
+                              <a href="">Tutorials</a>
+                  <a href="">Forums</a>
+                    <a href="">Articles</a>
+                       <a href="">Friends</a>
+
+                </div>
+            @endif
+
+             @if (Route::has('login'))
+                <div class="top-right1 links">
                     @auth
                         <a href="{{ url('/home') }}">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
                  
+                        <a href="{{ route('login') }}" style="right:10px">Login</a>
+                  <a href="{{ route('register') }}" style="right:10px">Register</a>
                     @endauth
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Institute
+                    Institute Application
                 </div>
 <!-- 
                 <div class="links">

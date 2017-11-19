@@ -8,6 +8,7 @@ use App\User;
 use App\Role;
 use DB;
 use Hash;
+use Maatwebsite\Excel;
 
 class UserController extends Controller
 {
@@ -44,17 +45,38 @@ class UserController extends Controller
      public function bulkupload(Request $request)
     {
       
-  // $this->validate($request, [
-  //           'name' => 'max:10240|required|mimes:csv,xlsx,txt',
+  $this->validate($request, [
+            'name' => 'max:10240|required|mimes:csv,xlsx,txt',
          
-  //       ]);
-   $imageName = "bulkupload-".bcrypt($request->file('name')->getClientOriginalExtension());
+        ]);
+   $imageName = "ramesh";
 
     $request->file('name')->move(
         base_path() . '/bulkupload/', $imageName.".csv"
     );
-    $rows = Excel::load('storage\\exports\\'. $fName)->get();
- return \Redirect::route('users.uploadcsv')->with('message', 'Product added!');  
+
+
+          \Excel::load(base_path() . '/bulkupload/ramesh.csv', function($reader) {
+
+      $results = $reader->get(array('name', 'email','password','roles'));
+         foreach ($results as $key => $value) {
+            $user = User::where('email', '=', $value->email)->first();
+if ($user === null) {
+            if($value->name!="" && $value->email!="" && $value->password!="" && $value->roles!="")
+            {
+         $user =User::create([
+            'name' => $value->name,
+            'email' => $value->email,
+            'password' => bcrypt($value->password),
+        ]);
+           $user->attachRole($value->roles);
+    }
+}
+}
+    
+});
+        return redirect()->route('users.index')
+                        ->with('success','User created successfully'); 
     }
 
     /**
@@ -77,6 +99,7 @@ class UserController extends Controller
 
         $user = User::create($input);
         foreach ($request->input('roles') as $key => $value) {
+
             $user->attachRole($value);
         }
 
